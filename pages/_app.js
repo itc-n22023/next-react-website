@@ -22,7 +22,7 @@ function MyApp ({ Component, pageProps }) {
   }, [router.events])
   return (
     <>
-      <Script
+      <Script id='my-script'
         strategy='afterInteractive'
         dangerouslySetInnerHTML={{
           __html: `
