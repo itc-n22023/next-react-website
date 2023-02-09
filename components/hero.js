@@ -2,7 +2,7 @@ import styles from 'styles/hero.module.css'
 import Image from 'next/image'
 import cube from 'images/cube.jpg'
 
-export default function Hero({ title, subtitle, imageOn = false }) {
+export default function Hero ({ title, subtitle, imageOn = false }) {
   return (
     <div className={styles.flexContainer}>
       <div className={styles.text}>
@@ -11,10 +11,11 @@ export default function Hero({ title, subtitle, imageOn = false }) {
       </div>
       {imageOn && (
         <figure className={styles.image}>
-          <Image src={cube} alt='' layout='responsive' 
-          sizes='(min-width: 1152px) 576px, (min-widh: 768px) 50vw, 100vw'
-          priority
-          placeholder='blur'
+          <Image
+            src={cube} alt='' layout='responsive'
+            sizes='(min-width: 1152px) 576px, (min-widh: 768px) 50vw, 100vw'
+            priority
+            placeholder='blur'
           />
         </figure>
       )}

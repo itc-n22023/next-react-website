@@ -7,12 +7,12 @@ import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-colum
 import Image from 'next/image'
 import eyecatch from 'images/about.jpg'
 
-export default function About() {
+export default function About () {
   return (
     <Container>
       <Meta
         pageTitle='アバウト'
-        pageDesc="About development activities"
+        pageDesc='About development activities'
         pageImg={eyecatch.src}
         pageImgW={eyecatch.width}
         pageImgH={eyecatch.height}
